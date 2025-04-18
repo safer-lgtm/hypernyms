@@ -3,6 +3,7 @@ import torch
 from src.config import MODEL_NAME, HF_TOKEN, MAX_NEW_TOKENS, BATCH_SIZE
 from typing import List, Dict
 import pandas as pd
+from tqdm import tqdm
 
 class LLMHypernymExtractor:
     def __init__(self):
