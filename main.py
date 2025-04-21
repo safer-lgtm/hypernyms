@@ -1,14 +1,17 @@
-from src.model import LLMHypernymExtractor, HypernymProcessor
+from src.model import LLMHypernymExtractor
 from src.data_loader import load_emails, process_llama_output
 from src.preprocessing import TextPreprocessor
 from src.config import DATA_PATH
+from utils.evaluation import Evaluator
+from utils.hypernym_processor import HypernymProcessor
+from utils.germanet_utils import  GermanetAnalyzer
 
 def main():
     # Initialisierung
     llm = LLMHypernymExtractor()
     preprocessor = TextPreprocessor()
     hypernym_processor = HypernymProcessor(max_depth=5)
-
+    evaluator = Evaluator()
     # Daten laden
     df = load_emails(DATA_PATH)
     print(df.shape)

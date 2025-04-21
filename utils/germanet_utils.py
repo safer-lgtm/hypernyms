@@ -12,6 +12,7 @@ class GermanetAnalyzer:
             return pd.DataFrame()
 
         chain_data = []
+        # BFS-Queue mit Hop-Level
         for synset_index, synset in enumerate(synsets):
             queue = [(synset, 1)]
             visited = set()

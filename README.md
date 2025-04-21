@@ -21,5 +21,5 @@ Anschließend lässt sich GermaNet wie folgt laden:
 germanet = Germanet("data/") # Pfad zu den entpackten XML-Dateien
 ```
 
-
+> Um die Hypernymsketten aus GermaNet zu holen wird zunächst der *Breadth-First Search* (BFS) Algorithmus eingesetzt, ein Verfahren zur ebenenweisen Durchsuchung von Knoten. Dabei wird eine Warteschlange (*Queue*) verwendet, um Begriffe zunächst auf derselben Ebene zu verarbeiten, bevor in höhere Ebenen übergegangen wird. In diesem Projekt wird BFS eingesetzt, um alle Synsets eines Wortes sowie deren übergeordnete Hypernyme systematisch zu erfassen. Eine anschauliche Einführung bietet dieser [Blogartikel](https://medium.com/@tahsinsoyakk/breadth-first-search-bfs-a-comprehensive-guide-4672bbc5e48c).
 
