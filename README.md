@@ -1,4 +1,4 @@
-# hypernyms
+# hypernyms - [Colab Notebook](https://colab.research.google.com/drive/1E8VQYgcuU81PUbHANxq1MSwDWa3uKwOf?usp=sharing)
 
 ## Forschung und Entwicklungsprojekt
 ### **Titel**: *Rekonstruktion von Hypernym-Taxonomien mittels LLMs im Vergleich zu menschlichen linguistischen Wortnetzen*
